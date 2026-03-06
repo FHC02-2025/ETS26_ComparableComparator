@@ -37,6 +37,8 @@ public class Student implements Comparable<Student> {
     @Override
     public int compareTo(Student o) {
         //return Integer.compare(this.getMatrNr(), o.getMatrNr()); // aufsteigend
-        return Integer.compare(o.getMatrNr(), this.matrNr); // absteigende
+        return Integer.compare(o.getMatrNr(), this.matrNr); // absteigend
+
+        // return this.matrNr - o.matrNr; // !!! absolut verboten
     }
 }

@@ -29,7 +29,7 @@ public class ArraySortDemo {
         System.out.println(Arrays.toString(strings));
 
         Student student1 = new Student(1, "Max", "Mustermann"); // STRG + D
-        Student student2 = new Student(2, "Susi", "Sorglos"); // STRG + D
+        Student student2 = new Student(Integer.MIN_VALUE, "Susi", "Sorglos"); // STRG + D
         Student student3 = new Student(3, "John", "Doe"); // STRG + D
 
         Student[] students = {student1, student2, student3};
@@ -37,5 +37,6 @@ public class ArraySortDemo {
         // sortieren
         Arrays.sort(students);
         System.out.println(Arrays.toString(students));
+        System.out.println(Integer.MIN_VALUE - 3);
     }
 }
