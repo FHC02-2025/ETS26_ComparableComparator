@@ -27,14 +27,20 @@ public class ListSortDemo {
 
         ArrayList<Student> students = new ArrayList<>();
         Student student1 = new Student(1, "Max", "Mustermann"); // STRG + D
+        Student student4 = new Student(2, "Susi", "Mustermann"); // STRG + D
         Student student2 = new Student(Integer.MIN_VALUE, "Susi", "Sorglos"); // STRG + D
         Student student3 = new Student(3, "John", "Doe"); // STRG + D
 
         students.add(student1);
         students.add(student2);
         students.add(student3);
+        students.add(student4);
         System.out.println(students);
         Collections.sort(students);
+        System.out.println(students);
+
+        System.out.println("Comparator");
+        students.sort(new StudentLastFirstNameComparator());
         System.out.println(students);
 
     }
