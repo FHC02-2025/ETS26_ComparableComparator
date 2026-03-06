@@ -1,6 +1,6 @@
 package org.campus02.lv;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private int matrNr;
     private String firstName;
     private String lastName;
@@ -32,5 +32,11 @@ public class Student {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        //return Integer.compare(this.getMatrNr(), o.getMatrNr()); // aufsteigend
+        return Integer.compare(o.getMatrNr(), this.matrNr); // absteigende
     }
 }
