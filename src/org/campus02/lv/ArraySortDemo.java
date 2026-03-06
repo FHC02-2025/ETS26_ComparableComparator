@@ -22,7 +22,20 @@ public class ArraySortDemo {
         Arrays.sort(chars);
         System.out.println(chars);
 
+        String[] strings = {"hallo", "wir", "sind", "fleißig", "am", "Ueben"};
+        System.out.println(Arrays.toString(strings));
+        // sortieren
+        Arrays.sort(strings);
+        System.out.println(Arrays.toString(strings));
 
+        Student student1 = new Student(1, "Max", "Mustermann"); // STRG + D
+        Student student2 = new Student(2, "Susi", "Sorglos"); // STRG + D
+        Student student3 = new Student(3, "John", "Doe"); // STRG + D
 
+        Student[] students = {student1, student2, student3};
+        System.out.println(Arrays.toString(students));
+        // sortieren
+        Arrays.sort(students);
+        System.out.println(Arrays.toString(students));
     }
 }
